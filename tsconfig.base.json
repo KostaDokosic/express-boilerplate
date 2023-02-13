@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "allowJs": false,
+
+    "paths": {
+      "@app/*": ["./apps/api/src/app/*"],
+      "@routes/*": ["./apps/api/src/routes/*"],
+      "@controllers/*": ["./apps/api/src/controllers/*"],
+      "@assets/*": ["./apps/api/src/assets/*"],
+      "@models/*": ["./apps/api/src/models/*"],
+      "@tests/*": ["./apps/api/src/tests/*"],
+      "@util/*": ["./apps/api/src/util/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
